@@ -22,14 +22,14 @@
     Principal
   </dt>
   <dd>
-    $<%= @input_pv.round(2) %>
+    <%= @input_pv.to_fs(:currency) %>
   </dd>
 
   <dt>
     Payment
   </dt>
   <dd>
-    $<%= @payment.round(2) %>
+    <%= @payment.to_fs(:currency) %>
   </dd>
 </dl>
 
